@@ -1,0 +1,10 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    height:15vh;
+    background-color: beige;
+}
+
+.nav img{
+    width: 100px;
+}

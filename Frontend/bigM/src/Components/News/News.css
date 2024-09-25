@@ -1,0 +1,78 @@
+/* Main newsletter container */
+.news {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #fef4e6; /* Softer background color */
+    padding: 20px;
+}
+
+.news h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.news p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Input and Button container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Add space between input and button */
+}
+
+/* Input styling */
+.container input {
+    padding: 10px 15px;
+    width: 20vw;
+    border: 2px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    font-size: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: all 0.3s ease;
+}
+
+/* Button styling */
+.container button {
+    padding: 10px 15px;
+    width: 12vw;
+    background-color: #ff9800; /* Bright, attractive color */
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Input hover/focus effect */
+.container input:focus {
+    border-color: #ff9800;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Button hover effect */
+.container button:hover {
+    background-color: #e67e00; /* Darker shade for hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 1000px) {
+    .container input {
+        width: 60vw; /* Expand input on smaller screens */
+    }
+
+    .container button {
+        width: 20vw; /* Expand button on smaller screens */
+    }
+}

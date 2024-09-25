@@ -1,0 +1,87 @@
+/* Main container */
+.our {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px; /* Add padding for better spacing */
+    background-color: #f9f9f900; /* Softer background color */
+}
+
+.our h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Grid container */
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Adjust the grid to fit better */
+    gap: 20px; /* Add gap between the categories */
+    width: 100%; /* Make it responsive */
+    max-width: 1200px;
+}
+
+/* Individual category card */
+.category {
+    border: 1px solid #e0e0e0;
+    background: linear-gradient(145deg, #f0e68c, #fff9e6); /* Soft gradient background */
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add hover animations */
+    padding: 20px;
+    cursor: pointer; /* Make it clear that it’s clickable */
+}
+
+/* Category hover effects */
+.category:hover {
+    transform: scale(1.05); /* Slight scale up on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Elevate the shadow on hover */
+}
+
+/* Category image */
+.category img {
+    width: 150px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+/* Image hover effect */
+.category:hover img {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Category text */
+.category p {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1000px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .category img {
+        width: 120px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .category img {
+        width: 100px;
+    }
+}

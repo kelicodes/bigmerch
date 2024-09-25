@@ -1,0 +1,18 @@
+.relatedproducts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cotainer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+}
+
+@media (max-width:800px) {
+    .cotainer{
+        grid-template-columns: repeat(2,1fr);
+    }
+}

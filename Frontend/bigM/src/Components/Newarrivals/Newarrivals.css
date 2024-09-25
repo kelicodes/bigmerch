@@ -1,0 +1,81 @@
+/* Main New Arrivals Section */
+.arrivals {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: burlywood; /* Light background for section */
+}
+
+.arrivals h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Grid container for items */
+.container {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Individual item styling */
+.container .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    padding: 15px;
+}
+
+/* Item hover effects */
+.container .item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Image inside the item */
+.container .item img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+/* Item name */
+.container .item p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Item price */
+.container .item .price {
+    font-size: 1rem;
+    color: #e67e22;
+}
+
+/* Responsive Design */
+@media (max-width: 1000px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

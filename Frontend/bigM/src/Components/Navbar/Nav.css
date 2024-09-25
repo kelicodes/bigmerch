@@ -1,0 +1,84 @@
+.navbar {
+    display: flex;
+    
+    justify-content: space-between;
+    height: 10vh;
+    width: 100vw;
+    background-color: #ff9800;
+   
+}
+
+.right {
+    position: relative;
+}
+
+.left {
+    display: flex;
+}
+
+.right nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.right nav ul li {
+    margin-left: 10px;
+    margin-right: 150px;
+}
+
+.navdropdown {
+    display: none;
+}
+
+@media (max-width:1000px) {
+
+    .navbar {
+        justify-content: space-around;
+        width: 100vw;
+        padding-left: 20px; /* Add space on the left */
+       padding-right: 20px; /* Add space on the right */
+
+    }
+
+    .navdropdown {
+        display: block;
+        width: 60px;
+        rotate: -90deg;
+        transition: 0.5s;
+    }
+
+    .right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .right nav .navmenu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        /* Position it right below the dropdown image */
+        left: 0;
+        /* Align with the left side of the parent container */
+        background-color: rgba(255, 215, 0, 1);
+        /* Set a background color */
+        width: 100%;
+        /* Make it full width if needed */
+        padding: 10px;
+        /* Add padding for spacing */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        /* Optional: Add shadow for visual appeal */
+        z-index: 999;
+        /* Ensure it stays on top */
+    }
+
+    .right nav .navmenuvisible {
+        display: flex !important;
+       flex-direction: column;
+    }
+
+    .navdropdown.open {
+        transform: rotate(90deg);
+    }
+}

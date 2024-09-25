@@ -1,0 +1,135 @@
+.loginsignup{
+    width: 100%;
+    height: 100vh;
+    padding-top: 100px;
+    background: #fce3fe;
+    margin-bottom: 200px;
+}
+
+.logincontainer{
+    width:580px ;
+    height:70vh ;
+    background:white ;
+    margin: auto;
+    padding: 40px 60px;
+
+
+    h1{
+        margin: 20px 0;
+    }
+
+    button{
+        width:580px ;
+        height:72px ;
+        color:white ;
+        background: #ff4141;
+        border: none;
+        margin-top: 30px;
+        font-weight: 500;
+        cursor: pointer;
+        font-size: 18px;
+    }
+
+}
+
+.loginfields{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+
+
+    input{
+        height: 72px;
+        width: 100%;
+        padding-left:20px ;
+        border: 1px solid #c9c9c9;
+        outline: none;
+        font-size: 18px;
+        color: #5c5c5c;
+    }
+}
+
+.loginsighnuplog{
+    margin-top: 20px;
+    color:#5c5c5c ;
+    font-size:18px ;
+    font-weight: 500;
+
+
+    span{
+        color:#ff4141 ;
+        font-weight: 600;
+
+    }
+}
+
+.loginsignupagree{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    color: #ff4141;
+    gap: 20px;
+    font-size:18px ;
+    font-weight: 600;
+
+}
+
+button:hover{
+    background-color: tomato;
+    color: black;
+    border-radius: 15px;
+}
+
+@media(max-width:1280px){
+    .loginsignup{
+        padding-top: 50px;
+    }
+    .logincontainer{
+        width: auto;
+        max-width: 500px;
+        max-height: 500px;
+    }
+    .logincontainer h1{
+        margin: 10px 0px;
+    }
+    .loginfields{
+        gap:20px;
+        margin-top: 20px;
+    }
+    .loginfields input{
+        height: 65px;
+        width: 93%;
+    }
+    .logincontainer button{
+        width: 100%;
+    }
+    .loginsighnuplog{
+        font-size: 16px;
+    }
+    .loginsignupagree{
+        font-size: 14px;
+        gap: 10px;
+    }
+}
+@media(max-width:800px){
+    .logincontainer{
+        margin-top: 8px;
+        padding: 20px, 30px;
+    }
+    .logincontainer h1{
+        font-size: 24px;
+    }
+    .loginfields{
+        margin-top: 20px;
+    }
+    .loginfields input{
+        height: 50px;
+
+    }
+    .logincontainer button{
+        height: 50px;
+        font-size: 16px;
+    }
+}
+

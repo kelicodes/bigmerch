@@ -1,0 +1,21 @@
+/* In Hero.css or your desired CSS file */
+.oswald-hero {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Example weight */
+  font-style: normal;
+}
+
+
+
+body {
+  background-color: burlywood;
+  color: rgba(72, 60, 50, 1);
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: rgba(107, 142, 35, 1);
+  color: white;
+}
